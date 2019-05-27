@@ -1,17 +1,17 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <sudokuApp />
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import SudokuApp from '~/components/SudokuApp.vue'
 
 export default {
   components: {
-    Logo
+    SudokuApp
   }
 }
 </script>
