@@ -1,4 +1,6 @@
 <template>
+  <div class="Sudoku">
+    text
   </div>
 </template>
 
