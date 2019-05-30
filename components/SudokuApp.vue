@@ -1,6 +1,6 @@
 <template>
   <div class="Sudoku">
-    <div v-for="(number, index) in num" :key="index">{{ number }}</div>
+    
   </div>
 </template>
 
