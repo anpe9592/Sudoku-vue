@@ -1,17 +1,17 @@
 <template>
   <div class="sudokuapp">
-    <HelloWorld />
+    <Sudoku />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Sudoku from '@/components/Sudoku.vue'
 
 export default {
   name: 'sudokuapp',
   components: {
-    HelloWorld
+    Sudoku
   }
 }
 </script>
