@@ -1,7 +1,9 @@
 <template>
   <div class="Sudoku">
     <div v-for="item in items" v-bind:key="item.id">
-      {{ item }}
+      <div v-for="item in item" v-bind:key="item.id">
+        {{ item }}
+      </div>
     </div>
   </div>
 </template>
