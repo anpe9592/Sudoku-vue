@@ -1,7 +1,7 @@
 <template>
   <div class="Sudoku">
     <div v-for="item in items" v-bind:key="item.id">
-      <div v-for="item in item" v-bind:key="item.id">
+      <div v-for="item in item" v-bind:key="item.id" class="cell">
         {{ item }}
       </div>
     </div>
@@ -57,5 +57,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.cell {
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  border-style: solid;
+  border-color: darkgray;
+  border-width: 2px 2px 2px 2px;
+  font-size: inherit;
+}
 </style>
