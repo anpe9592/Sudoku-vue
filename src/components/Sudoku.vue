@@ -1,14 +1,54 @@
 <template>
-  <div class="hello">
-    text
+  <div class="Sudoku">
+    <div v-for="item in items" v-bind:key="item.id">
+      {{ item }}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Sudoku',
-  props: {
-    msg: String
+  data () {
+    return {
+      items: [
+        [8, 0, 0],
+        [0, 0, 0],
+        [0, 1, 0],
+
+        [4, 0, 6],
+        [0, 0, 0],
+        [0, 0, 0],
+
+        [0, 0, 7],
+        [4, 0, 0],
+        [6, 5, 0],
+
+        [5, 0, 9],
+        [0, 0, 0],
+        [0, 4, 8],
+
+        [0, 3, 0],
+        [0, 7, 0],
+        [0, 2, 0],
+
+        [7, 8, 0],
+        [0, 0, 0],
+        [1, 0, 3],
+
+        [0, 5, 2],
+        [0, 0, 1],
+        [3, 0, 0],
+
+        [0, 0, 0],
+        [0, 0, 0],
+        [9, 0, 2],
+
+        [0, 9, 0],
+        [0, 0, 0],
+        [0, 0, 5]
+      ]
+    }
   }
 }
 </script>
