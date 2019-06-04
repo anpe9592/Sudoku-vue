@@ -67,4 +67,11 @@ export default {
   border-width: 2px 2px 2px 2px;
   font-size: inherit;
 }
+
+.Sudoku {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(9, 3em);
+  grid-gap: .1em;
+}
 </style>
