@@ -70,6 +70,7 @@ export default {
   float: left;
   display: grid;
   grid-template-columns: repeat(9, 3em);
-  grid-gap: .1em;
+  grid-row-gap: .3em;
+  grid-column-gap: .5em;
 }
 </style>
