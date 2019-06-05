@@ -1,6 +1,6 @@
 <template>
   <div class="Sudoku">
-    <div v-for="item in items" v-bind:key="item.id" class="cell">
+    <div v-for="item in items" v-bind:key="item.id" v-bind:style="bgc" class="cell">
       {{ item }}
     </div>
   </div>
@@ -25,8 +25,18 @@ export default {
         3, 0, 0, 9, 0, 2, 0, 0, 5
       ]
     }
+  },
+  computed: {
+    bgc: function () {
+      let c = 'aliceblue'
+      return {
+        backgroundColor: c
+      }
+    }
   }
 }
+// aliceblue
+// beige
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -35,6 +45,7 @@ export default {
   width: 3em;
   height: 3em;
   line-height: 3em;
+  background-color: aliceblue;
   text-align: center;
   border-style: solid;
   border-color: darkgray;
