@@ -1,6 +1,7 @@
 <template>
   <div class="Sudoku">
-      {{ item }}
+    <div v-for="item in items" v-bind:key="item.id" class="cell">
+      <input :value="item" />
     </div>
   </div>
 </template>
@@ -31,7 +32,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.cell {
+input {
   width: 3em;
   height: 3em;
   line-height: 3em;
