@@ -1,7 +1,7 @@
 <template>
   <div class="Sudoku">
     <div v-for="item in items" v-bind:key="item.id" class="cell">
-      <input :value="item" />
+      <input :value="item" type="text" :disabled="item > 0 ? true : false" />
     </div>
   </div>
 </template>
