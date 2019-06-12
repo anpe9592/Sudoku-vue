@@ -14,7 +14,17 @@ export default {
   name: 'Sudoku',
   data () {
     return {
-      items: [
+      items: []
+    }
+  },
+
+  mounted () {
+    this.setupBoard()
+  },
+
+  methods: {
+    setupBoard () {
+      this.items = [
         8, 0, 0, 4, 0, 6, 0, 0, 7,
         0, 0, 0, 0, 0, 0, 4, 0, 0,
         0, 1, 0, 0, 0, 0, 6, 5, 0,
