@@ -1,7 +1,7 @@
 <template>
   <div class="Sudoku">
     <div v-for="(item, index) in items" v-bind:key="item.id" class="cell">
-      <input type="text" class="inNum" v-model="inputNum[index]" :disabled="item > 0 ? true : false" />
+      <input type="text" v-model="items[index]" :disabled="item > 0 ? true : false" />
     </div>
     <div v-for="item in items" v-bind:key="item.id">
       {{ item }}
