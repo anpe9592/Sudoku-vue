@@ -19,7 +19,7 @@ export default {
     }
   },
 
-  mounted () {
+  beforeMount () {
     this.setupBoard()
   },
 
