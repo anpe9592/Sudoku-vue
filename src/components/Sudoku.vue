@@ -23,13 +23,11 @@ export default {
     this.setupBoard()
   },
 
-  computed: {
-    isdisabled: function () {
-      return true
-    }
-  },
-
   methods: {
+    isdisabled (n) {
+      return false
+    },
+
     setupBoard () {
       this.items = [
         8, 0, 0, 4, 0, 6, 0, 0, 7,
