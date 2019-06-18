@@ -25,7 +25,11 @@ export default {
 
   methods: {
     isdisabled (n) {
-      return false
+      if (this.shadowItems[n] > 0) {
+        return true
+      } else {
+        return false
+      }
     },
 
     setupBoard () {
