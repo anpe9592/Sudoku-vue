@@ -14,7 +14,8 @@ export default {
   name: 'Sudoku',
   data () {
     return {
-      items: []
+      items: [],
+      shadowItems: []
     }
   },
 
