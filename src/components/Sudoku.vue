@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// <input :value="item" type="text" :disabled="item > 0 ? true : false" />
 export default {
   name: 'Sudoku',
   data () {
