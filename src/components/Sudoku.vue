@@ -33,11 +33,11 @@ export default {
     },
 
     setupBoard () {
-      this.createBoard()
       this.createShadowBoard()
+      this.createBoard()
     },
 
-    createBoard () {
+    createShadowBoard () {
       this.items = [
         8, 0, 0, 4, 0, 6, 0, 0, 7,
         0, 0, 0, 0, 0, 0, 4, 0, 0,
@@ -53,8 +53,8 @@ export default {
       ]
     },
 
-    createShadowBoard () {
-      if (!this.shadowItems || !this.shadowItems.length) {
+    createBoard () {
+      if (this.shadowItems.length === 0) {
         this.shadowItems = this.items
       }
     }
