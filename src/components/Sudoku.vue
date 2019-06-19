@@ -3,8 +3,8 @@
     <div v-for="(item, index) in items" v-bind:key="item.id" class="cell">
       <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
     </div>
-    <div v-for="item in items" v-bind:key="item.id">
-      {{ item }}
+    <div v-for="shadowItem in shadowItems" v-bind:key="shadowItem.id">
+      {{ shadowItem }}
     </div>
   </div>
 </template>
@@ -54,7 +54,9 @@ export default {
     },
 
     createShadowBoard () {
-      this.shadowItems = this.items
+      if (!this.shadowItems || !this.shadowItems.length) {
+        this.shadowItems = this.items
+      }
     }
   }
 }
