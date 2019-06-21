@@ -3,9 +3,6 @@
     <div v-for="(item, index) in items" v-bind:key="item.id" class="cell">
       <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
     </div>
-    <div v-for="shadowItem in shadowItems" v-bind:key="shadowItem.id">
-      {{ shadowItem }}
-    </div>
   </div>
 </template>
 
