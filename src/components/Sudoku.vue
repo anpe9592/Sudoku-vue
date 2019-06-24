@@ -72,6 +72,10 @@ input {
   font-size: inherit;
 }
 
+input:disabled {
+  background-color: beige;
+}
+
 .Sudoku {
   float: left;
   display: grid;
