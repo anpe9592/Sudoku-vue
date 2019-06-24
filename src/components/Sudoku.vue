@@ -1,6 +1,6 @@
 <template>
   <div class="Sudoku">
-    <div v-for="(item, index) in items" v-bind:key="item.id" class="cell">
+    <div v-for="(item, index) in items" v-bind:key="item.id">
       <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
     </div>
   </div>
