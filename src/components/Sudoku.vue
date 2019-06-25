@@ -77,6 +77,12 @@ input:disabled {
   background-color: beige;
 }
 
+.shadowBox {
+  width: 3em;
+  height: 3em;
+  background-color: red;
+}
+
 .Sudoku {
   float: left;
   display: grid;
