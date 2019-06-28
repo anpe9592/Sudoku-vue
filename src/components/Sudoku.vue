@@ -1,11 +1,9 @@
 <template>
   <div class="Sudoku">
-    <div class="sudoku-container">
-      <div v-for="(item, index) in items" v-bind:key="item.id">
-        <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
-      </div>
-      <div v-for="item in items" v-bind:key="item.id" class="shadowBox"></div>
-      </div>
+    <div v-for="(item, index) in items" v-bind:key="item.id">
+      <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
+    </div>
+    <div v-for="item in items" v-bind:key="item.id" class="shadowBox"></div>
   </div>
 </template>
 
