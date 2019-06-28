@@ -96,4 +96,11 @@ export default {
   grid-row-gap: .3em;
   grid-column-gap: .5em;
 }
+
+.shadowTile {
+  z-index: -1;
+  width: 52px;
+  height: 54px;
+  background-color: red;
+}
 </style>
