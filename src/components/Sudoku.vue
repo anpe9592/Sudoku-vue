@@ -67,7 +67,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-input {
+.tile {
   width: 3em;
   height: 3em;
   line-height: 3em;
@@ -79,7 +79,7 @@ input {
   font-size: inherit;
 }
 
-input:disabled {
+.tile:disabled {
   background-color: beige;
 }
 
