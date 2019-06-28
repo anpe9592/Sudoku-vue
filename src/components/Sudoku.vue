@@ -1,9 +1,15 @@
 <template>
   <div class="Sudoku">
-    <div v-for="(item, index) in items" v-bind:key="item.id">
-      <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
+    <div class="sudokuBox">
+      <div v-for="(item, index) in items" v-bind:key="item.id">
+        <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
+      </div>
     </div>
-    <div v-for="item in items" v-bind:key="item.id" class="shadowBox"></div>
+    <div class="sudokuBox shadowBox">
+      <div v-for="item in items" v-bind:key="item.id">
+        <div class="shadowTile"></div>
+      </div>
+    </div>
   </div>
 </template>
 
