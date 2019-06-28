@@ -80,26 +80,16 @@ input:disabled {
 }
 
 .shadowBox {
-  z-index: -1;
   width: 3em;
   height: 3em;
   background-color: red;
 }
 
-.Sudoku-container {
+.Sudoku {
   float: left;
   display: grid;
   grid-template-columns: repeat(9, 3em);
   grid-row-gap: .3em;
   grid-column-gap: .5em;
-}
-
-.Sudoku {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
 }
 </style>
