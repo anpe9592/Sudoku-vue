@@ -101,4 +101,9 @@ export default {
   height: 54px;
   background-color: red;
 }
+
+.tileContainer {
+  width: 48px;
+  height: 54px;
+}
 </style>
