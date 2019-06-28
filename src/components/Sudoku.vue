@@ -89,7 +89,7 @@ export default {
   background-color: red;
 }
 
-.Sudoku {
+.sudokuBox {
   float: left;
   display: grid;
   grid-template-columns: repeat(9, 3em);
