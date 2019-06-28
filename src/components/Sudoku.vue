@@ -84,9 +84,7 @@ export default {
 }
 
 .shadowBox {
-  width: 3em;
-  height: 3em;
-  background-color: red;
+  position: absolute;
 }
 
 .sudokuBox {
