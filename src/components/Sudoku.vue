@@ -2,7 +2,7 @@
   <div class="Sudoku">
     <div class="sudokuBox">
       <div v-for="(item, index) in items" v-bind:key="item.id">
-        <input type="text" v-model="items[index]" :disabled="isdisabled(index)" />
+        <input type="text" v-model="items[index]" :disabled="isdisabled(index)" class="tile" />
       </div>
     </div>
     <div class="sudokuBox shadowBox">
