@@ -78,22 +78,12 @@ export default {
   background-color: beige;
 }
 
-.shadowBox {
-  position: absolute;
-}
-
 .sudokuBox {
   float: left;
   display: grid;
   grid-template-columns: repeat(9, auto);
   grid-row-gap: .3em;
   grid-column-gap: .5em;
-}
-
-.shadowTile {
-  z-index: -1;
-  width: 52px;
-  height: 54px;
 }
 
 .tileContainer {
