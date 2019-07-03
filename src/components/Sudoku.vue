@@ -90,7 +90,7 @@ export default {
 .sudokuBox {
   float: left;
   display: grid;
-  grid-template-columns: repeat(9, 3em);
+  grid-template-columns: repeat(9, auto);
   grid-row-gap: .3em;
   grid-column-gap: .5em;
 }
