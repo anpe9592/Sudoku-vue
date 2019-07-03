@@ -105,4 +105,10 @@ export default {
   width: 48px;
   height: 54px;
 }
+
+.tileContainer:nth-child(27n){
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 10px;
+}
 </style>
