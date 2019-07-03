@@ -99,7 +99,6 @@ export default {
   z-index: -1;
   width: 52px;
   height: 54px;
-  background-color: red;
 }
 
 .tileContainer {
