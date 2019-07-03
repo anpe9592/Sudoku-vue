@@ -106,6 +106,12 @@ export default {
   height: 54px;
 }
 
+.tileContainer:nth-child(3n){
+  border-style: solid;
+  border-color: transparent;
+  border-right-width: 10px;
+}
+
 .tileContainer:nth-child(27n){
   border-style: solid;
   border-color: transparent;
