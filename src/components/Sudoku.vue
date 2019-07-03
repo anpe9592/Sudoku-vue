@@ -109,12 +109,12 @@ export default {
 .tileContainer:nth-child(3n){
   border-style: solid;
   border-color: transparent;
-  border-right-width: 10px;
+  border-width: 0px 10px 0px 0px;
 }
 
 .tileContainer:nth-child(27n){
   border-style: solid;
   border-color: transparent;
-  border-bottom-width: 10px;
+  border-width: 0px 0px 10px 0px;
 }
 </style>
