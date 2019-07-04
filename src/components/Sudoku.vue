@@ -39,6 +39,17 @@ export default {
     setupBoard () {
       this.createBoard()
       this.createShadowBoard()
+      this.removeZeros()
+    },
+
+    removeZeros () {
+      let count = 0
+      for (let index = 0; index < this.items.length; index++) {
+        if (this.items[index] < 1) {
+          this.items[index] = ''
+        }
+      }
+      console.log(count)
     },
 
     createBoard () {
