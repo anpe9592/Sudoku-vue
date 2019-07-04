@@ -18,8 +18,8 @@ export default {
   name: 'Sudoku',
   data () {
     return {
-      items: '',
-      shadowItems: ''
+      items: [],
+      shadowItems: []
     }
   },
 
@@ -42,9 +42,7 @@ export default {
     },
 
     createBoard () {
-      this.items = '800406007000000400010000650509030780000070000048020103052000090001000000300902005'
-
-      /* [
+      this.items = [
         8, 0, 0, 4, 0, 6, 0, 0, 7,
         0, 0, 0, 0, 0, 0, 4, 0, 0,
         0, 1, 0, 0, 0, 0, 6, 5, 0,
@@ -56,7 +54,7 @@ export default {
         0, 5, 2, 0, 0, 0, 0, 9, 0,
         0, 0, 1, 0, 0, 0, 0, 0, 0,
         3, 0, 0, 9, 0, 2, 0, 0, 5
-        ] */
+      ]
     },
 
     createShadowBoard () {
