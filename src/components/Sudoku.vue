@@ -65,6 +65,19 @@ export default {
 
     createShadowBoard () {
       this.shadowItems = [...this.items]
+      this.solveShadowItem()
+    },
+
+    solver () {
+      this.checkItem()
+    },
+
+    checkItem () {
+      // is item eq shadowitem
+    },
+
+    solveShadowItem () {
+      // solve shadowItem
     }
   }
 }
