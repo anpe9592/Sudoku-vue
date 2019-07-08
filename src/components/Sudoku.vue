@@ -68,10 +68,6 @@ export default {
       this.solveShadowItem()
     },
 
-    solver () {
-      this.checkItem()
-    },
-
     checkItem () {
       // is item eq shadowitem
     },
