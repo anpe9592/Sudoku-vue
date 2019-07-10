@@ -76,8 +76,8 @@ export default {
       // is item eq shadowitem
     },
 
-      // solve shadowItem
     solveItems () {
+      this.solutionItems = this.solve(this.shadowItems)
     }
   }
 }
