@@ -4,8 +4,8 @@ export default {
   data () {
     return {
       CHUNK_SIZE: 3,
-      ROW_COL_SIZE: this.CHUNK_SIZE * this.CHUNK_SIZE,
-      SIZE: this.ROW_COL_SIZE * this.ROW_COL_SIZE,
+      ROW_COL_SIZE: 9,
+      SIZE: 81,
       MIN_HINTS: 17,
       iterations: 0
     }
