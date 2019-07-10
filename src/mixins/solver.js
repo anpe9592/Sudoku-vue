@@ -4,8 +4,8 @@ export default {
   data () {
     return {
       CHUNK_SIZE: 3,
-      ROW_COL_SIZE: CHUNK_SIZE * CHUNK_SIZE,
-      SIZE: ROW_COL_SIZE * ROW_COL_SIZE,
+      ROW_COL_SIZE: this.CHUNK_SIZE * this.CHUNK_SIZE,
+      SIZE: this.ROW_COL_SIZE * this.ROW_COL_SIZE,
       MIN_HINTS: 17,
       iterations: 0
     }
@@ -13,19 +13,19 @@ export default {
 
   methods: {
     checkRow (puzzle, number, index) {
-      var start = Math.floor(index / ROW_COL_SIZE) * ROW_COL_SIZE
-      for (var i = 0; i < ROW_COL_SIZE; i += 1) {
+      var start = Math.floor(index / this.ROW_COL_SIZE) * this.ROW_COL_SIZE
+      for (var i = 0; i < this.ROW_COL_SIZE; i += 1) {
         if (puzzle[start + i] === number) {
           return false
         }
       }
       return true
     },
-    
+
     checkCol (puzzle, number, index) {
-      var start = index % ROW_COL_SIZE
-      for (var i = 0; i < ROW_COL_SIZE; i += 1) {
-        if (puzzle[start + (i * ROW_COL_SIZE)] === number) {
+      var start = index % this.ROW_COL_SIZE
+      for (var i = 0; i < this.ROW_COL_SIZE; i += 1) {
+        if (puzzle[start + (i * this.ROW_COL_SIZE)] === number) {
           return false
         }
       }
@@ -33,10 +33,10 @@ export default {
     },
 
     check3x3 (puzzle, number, index) {
-      var start = index - ((index % ROW_COL_SIZE) % CHUNK_SIZE) -
-      (ROW_COL_SIZE * (Math.floor(index / ROW_COL_SIZE) % CHUNK_SIZE))
-      for (var i = 0; i < ROW_COL_SIZE; i += 1) {
-        if (puzzle[start + (ROW_COL_SIZE * Math.floor(i / CHUNK_SIZE)) + (i % CHUNK_SIZE)] === number) {
+      var start = index - ((index % this.ROW_COL_SIZE) % this.CHUNK_SIZE) -
+      (this.ROW_COL_SIZE * (Math.floor(index / this.ROW_COL_SIZE) % this.CHUNK_SIZE))
+      for (var i = 0; i < this.ROW_COL_SIZE; i += 1) {
+        if (puzzle[start + (this.ROW_COL_SIZE * Math.floor(i / this.CHUNK_SIZE)) + (i % this.CHUNK_SIZE)] === number) {
           return false
         }
       }
@@ -44,25 +44,25 @@ export default {
     },
 
     check (puzzle, number, index) {
-      return checkRow(puzzle, number, index) &&
-      checkCol(puzzle, number, index) &&
-      check3x3(puzzle, number, index)
+      return this.checkRow(puzzle, number, index) &&
+      this.checkCol(puzzle, number, index) &&
+      this.check3x3(puzzle, number, index)
     },
 
     recursiveSolve (puzzle, index, maxIterations) {
-      if (maxIterations !== 0 && ++iterations > maxIterations) {
+      if (maxIterations !== 0 && ++this.iterations > maxIterations) {
         throw new Error('Max iterations reached. No solution found.')
       }
-      if (index >= SIZE) {
+      if (index >= this.SIZE) {
         return true
       } else if (puzzle[index] !== 0) {
-        return recursiveSolve(puzzle, index + 1, maxIterations)
+        return this.recursiveSolve(puzzle, index + 1, maxIterations)
       }
 
-      for (var number = 1; number <= ROW_COL_SIZE; number += 1) {
-        if (check(puzzle, number, index)) {
+      for (var number = 1; number <= this.ROW_COL_SIZE; number += 1) {
+        if (this.check(puzzle, number, index)) {
           puzzle[index] = number
-          if (recursiveSolve(puzzle, index + 1, maxIterations)) {
+          if (this.recursiveSolve(puzzle, index + 1, maxIterations)) {
             return true
           }
         }
@@ -91,7 +91,7 @@ export default {
         throw new TypeError('Puzzle must be string or array.')
       }
 
-      if (puzzle.length !== SIZE) {
+      if (puzzle.length !== this.SIZE) {
         throw new Error('Puzzle is an invalid size.')
       }
 
@@ -107,12 +107,12 @@ export default {
         }
         return value
       })
-      
-      if (opts.hintCheck && hints < MIN_HINTS) {
-        throw new Error('A valid puzzle must have at least ' + MIN_HINTS + ' hints.')
+
+      if (opts.hintCheck && hints < this.MIN_HINTS) {
+        throw new Error('A valid puzzle must have at least ' + this.MIN_HINTS + ' hints.')
       }
 
-      if (!recursiveSolve(puzzle, 0, opts.maxIterations)) {
+      if (!this.recursiveSolve(puzzle, 0, opts.maxIterations)) {
         throw new Error('Puzzle could not be solved.')
       }
 
