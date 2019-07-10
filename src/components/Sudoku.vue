@@ -9,8 +9,11 @@
 </template>
 
 <script>
+import solver from '@/mixins/solver'
+
 export default {
   name: 'Sudoku',
+  mixins: [solver],
   data () {
     return {
       items: [],
