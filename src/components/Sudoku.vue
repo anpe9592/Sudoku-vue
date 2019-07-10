@@ -68,15 +68,15 @@ export default {
 
     createShadowBoard () {
       this.shadowItems = [...this.items]
-      this.solveShadowItem()
+      this.solveItems()
     },
 
     checkItem () {
       // is item eq shadowitem
     },
 
-    solveShadowItem () {
       // solve shadowItem
+    solveItems () {
     }
   }
 }
