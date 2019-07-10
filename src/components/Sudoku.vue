@@ -17,7 +17,8 @@ export default {
   data () {
     return {
       items: [],
-      shadowItems: []
+      shadowItems: [],
+      solutionItems: []
     }
   },
 
