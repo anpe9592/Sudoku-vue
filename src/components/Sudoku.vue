@@ -100,6 +100,10 @@ export default {
   background-color: beige;
 }
 
+.tile:invalid {
+    background: red;
+}
+
 .sudokuBox {
   float: left;
   display: grid;
