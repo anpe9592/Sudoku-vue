@@ -5,6 +5,9 @@
         <input type="text" v-model="items[index]" :disabled="isdisabled(index)" class="tile" />
       </div>
     </div>
+    <div>
+      <button v-on:click="checkItem()">Check</button>
+    </div>
   </div>
 </template>
 
@@ -72,6 +75,7 @@ export default {
 
     checkItem () {
       // is item eq shadowitem
+      console.log('check')
     },
 
     solveItems () {
