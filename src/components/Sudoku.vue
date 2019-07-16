@@ -74,8 +74,13 @@ export default {
     },
 
     checkItem () {
-      // is item eq shadowitem
       console.log('check')
+
+      if (this.solutionItems === this.items.join('')) {
+        console.log('solvd')
+      } else {
+        console.log('not solved')
+      }
     },
 
     solveItems () {
