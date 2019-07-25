@@ -8,6 +8,7 @@
     <div>
       <button v-on:click="checkItem()">Check</button>
     </div>
+    <div>{{solutionItems}}</div>
     <gameMenu @new-game="newGame()" :gameOver="gameOver"></gameMenu>
   </div>
 </template>
