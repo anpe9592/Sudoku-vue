@@ -8,20 +8,27 @@
     <div>
       <button v-on:click="checkItem()">Check</button>
     </div>
+    <gameMenu @new-game="newGame()" :gameOver="gameOver"></gameMenu>
   </div>
 </template>
 
 <script>
 import solver from '@/mixins/solver'
+import gameMenu from '@/components/gameMenu.vue'
 
 export default {
   name: 'Sudoku',
   mixins: [solver],
+  components: {
+    gameMenu
+  },
+
   data () {
     return {
       items: [],
       shadowItems: [],
-      solutionItems: []
+      solutionItems: [],
+      gameOver: false
     }
   },
 
