@@ -1,7 +1,6 @@
 <template>
   <div class="gameMenu">
     <div class="row">
-      <div class="title">2048</div>
       <div class="scores space-right">
         <div class="score">
           <div class="score-title">SCORE</div>
