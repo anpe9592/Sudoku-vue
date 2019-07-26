@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <a class="button space-right" @click="newGame()">New Game</a>
+    <a class="button space-right" @click="newGame()">Check</a>
     <transition name="fade">
       <div v-if="gameOver" class="modal">
         <h1>Game Over!</h1>
