@@ -33,38 +33,7 @@ export default {
   },
 
   watch: {
-    score (newValue, oldValue) {
-      const self = this
 
-      if (newValue > 0) {
-        let oldPoints = _.cloneDeep(self.pointsIncrease)
-        oldPoints.push(newValue - oldValue)
-        self.pointsIncrease = oldPoints
-      }
-
-      function animate () {
-        if (TWEEN.update()) {
-          requestAnimationFrame(animate)
-        }
-      }
-
-      new TWEEN.Tween({ tweeningNumber: oldValue })
-        .easing(TWEEN.Easing.Quadratic.Out)
-        .to({ tweeningNumber: newValue }, 500)
-        .onUpdate(function () {
-          self.animatedScore = this.tweeningNumber.toFixed(0)
-        })
-        .start()
-      animate()
-    },
-
-    pointsIncrease (newPoints, oldPoints) {
-      if (newPoints.length > oldPoints.length) {
-        setTimeout(() => {
-          this.pointsIncrease.pop()
-        }, 200)
-      }
-    }
   },
 
   computed: {
