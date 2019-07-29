@@ -40,7 +40,7 @@ export default {
 
   methods: {
     newGame () {
-      this.$emit('new-game')
+      // this.$emit('new-game')
     }
   }
 }
