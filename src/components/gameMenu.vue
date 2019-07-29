@@ -35,13 +35,7 @@ export default {
   },
 
   computed: {
-    score () {
-      return this.$store.state.score
-    },
 
-    best () {
-      return this.$store.state.best
-    }
   },
 
   methods: {
