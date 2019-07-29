@@ -11,9 +11,6 @@
 </template>
 
 <script>
-import TWEEN from 'tween.js'
-import _ from 'lodash'
-
 export default {
   name: 'gameMenu',
 
