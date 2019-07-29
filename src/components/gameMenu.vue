@@ -26,8 +26,6 @@ export default {
 
   data () {
     return {
-      animatedScore: 0,
-      animatedBest: 0,
       pointsIncrease: []
     }
   },
