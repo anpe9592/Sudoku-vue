@@ -53,6 +53,12 @@ export default {
       this.removeZeros()
     },
 
+    newGame () {
+      console.log('this works!2')
+      this.gameOver = false
+      this.won = false
+    },
+
     removeZeros () {
       for (let index = 0; index < this.items.length; index++) {
         if (this.items[index] < 1) {
