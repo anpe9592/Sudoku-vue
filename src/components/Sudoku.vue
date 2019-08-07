@@ -54,7 +54,7 @@ export default {
     },
 
     newGame () {
-      console.log('this works!2')
+      this.checkItem()
       this.gameOver = false
       this.won = false
     },
