@@ -24,6 +24,11 @@ export default {
     gameOver: {
       type: Boolean,
       required: true
+    },
+
+    won: {
+      type: Boolean,
+      required: true
     }
   },
 

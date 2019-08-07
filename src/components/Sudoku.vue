@@ -9,7 +9,7 @@
       <button v-on:click="checkItem()">Check</button>
     </div>
     <div>{{solutionItems}}</div>
-    <gameMenu @new-game="newGame()" :gameOver="gameOver"></gameMenu>
+    <gameMenu @new-game="newGame()" :gameOver="gameOver" :won="won"></gameMenu>
   </div>
 </template>
 
@@ -29,7 +29,8 @@ export default {
       items: [],
       shadowItems: [],
       solutionItems: [],
-      gameOver: false
+      gameOver: false,
+      won: false
     }
   },
 
