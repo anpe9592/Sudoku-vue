@@ -9,7 +9,7 @@
         </div>
         <div v-else-if="gameOver" class="modal">
           <h1>Not solved!</h1>
-          <a class="button button-black" @click="newGame()">Close</a>
+          <a class="button button-black" @click="closeBox()">Close</a>
           </div>
       </div>
     </transition>
@@ -49,6 +49,10 @@ export default {
   methods: {
     newGame () {
       this.$emit('new-game')
+    },
+
+    closeBox () {
+      this.$emit('close-box')
     }
   }
 }
