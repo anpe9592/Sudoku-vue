@@ -53,10 +53,11 @@ export default {
     newGame () {
       this.checkItem()
       // this.gameOver = false
-      this.won = false
+      // this.won = false
     },
 
     closeBox () {
+      this.won = false
       this.gameOver = false
     },
 
@@ -94,6 +95,7 @@ export default {
 
       if (this.solutionItems === this.items.join('')) {
         console.log('solvd')
+        this.won = true
       } else {
         console.log('not solved')
         this.gameOver = true
