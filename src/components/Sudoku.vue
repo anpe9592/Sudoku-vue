@@ -52,8 +52,6 @@ export default {
 
     newGame () {
       this.checkItem()
-      // this.gameOver = false
-      // this.won = false
     },
 
     closeBox () {
