@@ -89,13 +89,9 @@ export default {
     },
 
     checkItem () {
-      console.log('check')
-
       if (this.solutionItems === this.items.join('')) {
-        console.log('solvd')
         this.won = true
       } else {
-        console.log('not solved')
         this.gameOver = true
       }
     },
