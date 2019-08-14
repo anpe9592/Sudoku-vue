@@ -2,15 +2,13 @@
   <div class="gameMenu">
     <a class="button space-right" @click="newGame()">Check</a>
     <transition name="fade">
-      <div v-if="gameOver" class="modal">
-        <div v-if="won" class="modal">
-          <h1>{{ this.gameWon() }} Won!</h1>
-          <a class="button button-black" @click="closeBox()">Play again</a>
-        </div>
-        <div v-else-if="gameOver" class="modal">
-          <h1>Not solved!</h1>
-          <a class="button button-black" @click="closeBox()">Close</a>
-          </div>
+      <div v-if="won" class="modal">
+        <h1>Won!</h1>
+        <a class="button button-black" @click="closeBox()">Play again</a>
+      </div>
+      <div v-else-if="gameOver" class="modal">
+        <h1>Not solved!</h1>
+        <a class="button button-black" @click="closeBox()">Close</a>
       </div>
     </transition>
   </div>
