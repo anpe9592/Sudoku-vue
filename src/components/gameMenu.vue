@@ -1,6 +1,6 @@
 <template>
   <div class="gameMenu">
-    <a class="button space-right" @click="newGame()">Check</a>
+    <a class="button space-right" @click="checkBoard()">Check</a>
     <transition name="fade">
       <div v-if="won" class="modal">
         <h1>Sudoku Solved!</h1>
@@ -45,8 +45,8 @@ export default {
   },
 
   methods: {
-    newGame () {
-      this.$emit('new-game')
+    checkBoard () {
+      this.$emit('check-board')
     },
 
     closeBox () {

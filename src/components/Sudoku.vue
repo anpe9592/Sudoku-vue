@@ -5,7 +5,7 @@
         <input type="text" v-model="items[index]" :disabled="isdisabled(index)" class="tile" />
       </div>
     </div>
-    <gameMenu @new-game="newGame()" @close-box="closeBox()" :gameOver="gameOver" :won="won"></gameMenu>
+    <gameMenu @check-board="checkBoard()" @close-box="closeBox()" :gameOver="gameOver" :won="won"></gameMenu>
     <div>{{solutionItems}}</div>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
       this.removeZeros()
     },
 
-    newGame () {
+    checkBoard () {
       this.checkItem()
     },
 
