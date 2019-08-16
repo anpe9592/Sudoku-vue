@@ -3,11 +3,11 @@
     <a class="button space-right" @click="newGame()">Check</a>
     <transition name="fade">
       <div v-if="won" class="modal">
-        <h1>Won!</h1>
+        <h1>Sudoku Solved!</h1>
         <a class="button button-black" @click="closeBox()">Play again</a>
       </div>
       <div v-else-if="gameOver" class="modal">
-        <h1>Not solved!</h1>
+        <h1>Sudoku not solved!</h1>
         <a class="button button-black" @click="closeBox()">Close</a>
       </div>
     </transition>
