@@ -63,7 +63,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  width: 23em;
+  width: 5em;
   height: 7em;
   padding: 1em;
 }
