@@ -68,12 +68,6 @@ export default {
   padding: 1em;
 }
 
-.scores {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1em;
-}
-
 .space-right {
   margin-left: auto;
 }
