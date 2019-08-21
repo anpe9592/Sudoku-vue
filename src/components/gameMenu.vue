@@ -68,10 +68,6 @@ export default {
   padding: 1em;
 }
 
-.row {
-  display: flex;
-}
-
 .title {
   font-size: 2.75em;
   color: #1E1E12;
