@@ -6,7 +6,6 @@
       </div>
     </div>
     <gameMenu @check-board="checkBoard()" @close-box="closeBox()" :gameOver="gameOver" :won="won"></gameMenu>
-    <div>{{solutionItems}}</div>
   </div>
 </template>
 
