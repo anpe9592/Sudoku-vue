@@ -68,11 +68,6 @@ export default {
   padding: 1em;
 }
 
-.title {
-  font-size: 2.75em;
-  color: #1E1E12;
-}
-
 .scores {
   display: flex;
   flex-direction: row;
