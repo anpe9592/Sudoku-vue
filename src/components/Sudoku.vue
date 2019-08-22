@@ -82,6 +82,10 @@ export default {
       ]
     },
 
+    readInSudoku () {
+      // read in sudoku from /assets/sudoku.txt
+    },
+
     createShadowBoard () {
       this.shadowItems = [...this.items]
       this.solveItems()
