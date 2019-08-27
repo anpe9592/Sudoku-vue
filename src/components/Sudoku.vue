@@ -81,10 +81,10 @@ export default {
         3, 0, 0, 9, 0, 2, 0, 0, 5
       ]
 
-      this.readInSudoku()
+      this.getSudoku()
     },
 
-    readInSudoku () {
+    getSudoku () {
       // open and read in sudoku from /assets/sudoku.txt
       // store multiple sudoku as separate strings in array
       // chose random sudoku in array
