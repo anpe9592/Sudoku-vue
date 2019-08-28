@@ -85,15 +85,15 @@ export default {
     },
 
     getSudoku () {
-      this.readInSudoku()
+      this.importSudoku()
     },
       // open and read in sudoku from /assets/sudoku.txt
       // store multiple sudoku as separate strings in array
       // chose random sudoku in array
       // transform string to an array
       // load it into game board
-    readInSudoku () {
       
+    importSudoku () {
     },
 
     createShadowBoard () {
