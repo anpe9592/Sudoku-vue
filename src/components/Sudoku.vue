@@ -93,6 +93,8 @@ export default {
     // transform string to an array
     // load it into game board
     importSudoku () {
+      let test = genSudoku()
+      console.log(test)
     },
 
     createShadowBoard () {
