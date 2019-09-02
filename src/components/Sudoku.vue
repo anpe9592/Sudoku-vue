@@ -12,7 +12,7 @@
 <script>
 import solver from '@/mixins/solver'
 import gameMenu from '@/components/gameMenu.vue'
-import sudokus from '@/assets/sudoku'
+import genSudoku from '@/assets/sudoku'
 
 export default {
   name: 'Sudoku',
