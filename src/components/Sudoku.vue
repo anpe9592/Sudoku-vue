@@ -88,7 +88,6 @@ export default {
     getSudoku () {
       this.importSudoku()
     },
-    // import sudoku from /assets/sudoku.js
     // chose random sudoku in array
     // transform string to an array
     // load it into game board
