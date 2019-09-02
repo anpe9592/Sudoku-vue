@@ -5,3 +5,5 @@ function genSudoku () {
   ]
   return sudokus[0]
 }
+
+export default genSudoku
