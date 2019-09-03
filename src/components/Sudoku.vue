@@ -88,8 +88,8 @@ export default {
     getSudoku () {
       this.importSudoku()
     },
-    // chose random sudoku in array
     // transform string to an array
+    // chose random sudoku in array
     // load it into game board
     importSudoku () {
       let test = genSudoku()
