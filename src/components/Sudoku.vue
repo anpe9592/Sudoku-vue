@@ -83,9 +83,7 @@ export default {
       ] */
       this.items = genSudoku()
     },
-    // transform string to an array
-    // chose random sudoku in array
-    // load it into game board
+    // add more sudokus
 
     createShadowBoard () {
       this.shadowItems = [...this.items]
