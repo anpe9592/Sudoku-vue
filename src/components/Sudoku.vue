@@ -81,12 +81,7 @@ export default {
         0, 0, 1, 0, 0, 0, 0, 0, 0,
         3, 0, 0, 9, 0, 2, 0, 0, 5
       ]
-
-      this.getSudoku()
-    },
-
-    getSudoku () {
-      this.importSudoku()
+      ] */
     },
     // transform string to an array
     // chose random sudoku in array
