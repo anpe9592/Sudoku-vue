@@ -4,6 +4,11 @@ function genSudoku () {
     '703000009000700008010054000020090030005201800080030010000560070500002000400000201'
   ]
   return sudokus[0]
+
+function sudokuToArray (sudoku) {
+  let str = sudoku
+  let ar = str.split('')
+  return ar
 }
 
 export default genSudoku
