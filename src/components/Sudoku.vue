@@ -83,7 +83,6 @@ export default {
       ] */
       this.items = genSudoku()
     },
-    // add more sudokus
 
     createShadowBoard () {
       this.shadowItems = [...this.items]
