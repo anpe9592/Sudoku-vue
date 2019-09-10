@@ -1,5 +1,6 @@
 <template>
   <div class="gameMenu">
+    <div class="title">Sudoku</div>
     <a class="button space-right" @click="checkBoard()">Check</a>
     <transition name="fade">
       <div v-if="won" class="modal">
