@@ -106,11 +106,6 @@ export default {
   align-items: center;
   z-index: 99999;
 }
-.points-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
-}
-
 .points-enter {
   transform: translateY(30);
 }
