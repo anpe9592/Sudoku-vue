@@ -78,15 +78,15 @@ export default {
   height: 2em;
   justify-content: center;
   padding: 0.1em 0.75em;
-  border: 1px solid #91CCC8;
-  color: #91CCC8;
+  border: 1px solid rgb(171, 214, 252);
+  color: rgb(171, 214, 252);
   border-radius: 6px;
   align-items: center;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #91CCC8;
+  background-color: rgb(171, 214, 252);
   color: white;
 }
 
