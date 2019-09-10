@@ -30,20 +30,6 @@ export default {
     }
   },
 
-  data () {
-    return {
-
-    }
-  },
-
-  watch: {
-
-  },
-
-  computed: {
-
-  },
-
   methods: {
     checkBoard () {
       this.$emit('check-board')
