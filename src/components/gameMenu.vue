@@ -106,10 +106,6 @@ export default {
   align-items: center;
   z-index: 99999;
 }
-.points-enter-active, .points-leave-active {
-  transition: all 100ms;
-}
-
 .points-leave-to {
   opacity: 0;
   transform: translateY(-30px);
