@@ -58,16 +58,6 @@ export default {
   margin-left: auto;
 }
 
-.score {
-  background-color: #91CCC8;
-  margin-left: 0.5em;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5em 1.5em;
-}
 
 .score-title {
   font-size: .75em;
