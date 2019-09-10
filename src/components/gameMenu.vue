@@ -106,13 +106,6 @@ export default {
   align-items: center;
   z-index: 99999;
 }
-
-.points {
-  position: absolute;
-  color: #8BD096;
-  margin-top: -40px;
-}
-
 .points-item {
   display: inline-block;
 }
