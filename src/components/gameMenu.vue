@@ -106,10 +106,6 @@ export default {
   align-items: center;
   z-index: 99999;
 }
-.points-item {
-  display: inline-block;
-}
-
 .points-enter-active, .points-leave-active {
   transition: all 100ms;
 }
