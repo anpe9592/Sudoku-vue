@@ -59,6 +59,11 @@ export default {
   margin-left: auto;
 }
 
+.title {
+  font-size: 2.75em;
+  color: #1E1E12;
+}
+
 .button {
   display: flex;
   height: 2em;
