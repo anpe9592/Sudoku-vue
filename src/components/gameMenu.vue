@@ -62,6 +62,7 @@ export default {
 .title {
   font-size: 2.75em;
   color: #1E1E12;
+  margin-bottom: 0.5em;
 }
 
 .button {
