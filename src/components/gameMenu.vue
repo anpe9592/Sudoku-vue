@@ -106,7 +106,4 @@ export default {
   align-items: center;
   z-index: 99999;
 }
-.points-enter {
-  transform: translateY(30);
-}
 </style>
