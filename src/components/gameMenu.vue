@@ -58,11 +58,6 @@ export default {
   margin-left: auto;
 }
 
-
-.score-title {
-  font-size: .75em;
-}
-
 .button {
   display: flex;
   height: 2em;
