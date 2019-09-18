@@ -55,10 +55,6 @@ export default {
   padding: 1em;
 }
 
-.space-right {
-  margin-left: auto;
-}
-
 .title {
   font-size: 2.75em;
   color: #1E1E12;
