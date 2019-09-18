@@ -1,7 +1,8 @@
 <template>
   <div class="gameMenu">
     <div class="title">Sudoku</div>
-    <a class="button space-right" @click="checkBoard()">Check</a>
+    <a class="button space" @click="checkBoard()">Check</a>
+    <a class="button space-right" @click="solveBoard()">Solution</a>
     <transition name="fade">
       <div v-if="won" class="modal">
         <h1>Sudoku Solved!</h1>
