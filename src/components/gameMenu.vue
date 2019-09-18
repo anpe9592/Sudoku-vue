@@ -37,6 +37,10 @@ export default {
       this.$emit('check-board')
     },
 
+    solveBoard () {
+      this.$emit('solve-board')
+    },
+
     closeBox () {
       this.$emit('close-box')
     }
