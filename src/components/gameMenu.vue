@@ -80,7 +80,12 @@ export default {
 }
 
 .space-right {
-  margin-left: auto;
+  margin-left: 1em;
+}
+
+.space {
+  margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 .fade-enter-active {
