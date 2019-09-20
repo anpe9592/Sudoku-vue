@@ -54,6 +54,10 @@ export default {
       this.checkItem()
     },
 
+    solveBoard () {
+      console.log('YES')
+    },
+
     closeBox () {
       this.won = false
       this.gameOver = false
