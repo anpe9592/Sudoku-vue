@@ -58,7 +58,7 @@ export default {
     },
 
     solveBoard () {
-      console.log('YES')
+      this.items = this.solve(this.shadowItems)
     },
 
     closeBox () {
