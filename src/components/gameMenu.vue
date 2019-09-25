@@ -2,7 +2,6 @@
   <div class="gameMenu">
     <div class="title">Sudoku</div>
     <a class="button space" @click="checkBoard()">Check</a>
-    <a class="button space-right" @click="solveBoard()">Auto solve</a>
     <transition name="fade">
       <div v-if="won" class="modal">
         <h1>Sudoku Solved!</h1>
@@ -35,10 +34,6 @@ export default {
   methods: {
     checkBoard () {
       this.$emit('check-board')
-    },
-
-    solveBoard () {
-      this.$emit('solve-board')
     },
 
     closeBox () {

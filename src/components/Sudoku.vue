@@ -5,10 +5,7 @@
         <input type="text" v-model="items[index]" :disabled="isdisabled(index)" class="tile" />
       </div>
     </div>
-    <gameMenu
-      @check-board="checkBoard()" @close-box="closeBox()" :gameOver="gameOver" :won="won"
-      @solve-board="solveBoard()">
-    </gameMenu>
+    <gameMenu @check-board="checkBoard()" @close-box="closeBox()" :gameOver="gameOver" :won="won"></gameMenu>
   </div>
 </template>
 
@@ -55,10 +52,6 @@ export default {
 
     checkBoard () {
       this.checkItem()
-    },
-
-    solveBoard () {
-      this.items = this.solve(this.shadowItems)
     },
 
     closeBox () {
